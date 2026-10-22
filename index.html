@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="P1Harmony BLOW UP 日本オンライン特典会の非公式・模擬購入応募サイト。決済も応募も実際には行われません。">
+  <title>P1Harmony - BLOW UP | 模擬応募</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="demo-banner"><span>SIMULATION · 非公式ファン制作</span><span>仅供模拟，不是真实 WHOZ+N 网站</span></div>
+  <header class="header">
+    <div class="header-content">
+      <button class="header-icon" data-action="menu" aria-label="打开导航菜单" title="菜单">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="wordmark" data-nav="product" aria-label="模拟商店首页">WHOZ<span class="wordmark-star">✦</span><span class="wordmark-n">N</span><small>DEMO</small></button>
+      <div class="header-right">
+        <button class="header-icon" data-nav="history" aria-label="查看模拟订单历史" title="订单历史">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.3"/><path d="M4.5 21v-2.4a7.5 7.5 0 0 1 15 0V21"/></svg>
+        </button>
+        <button class="header-icon cart-icon" data-nav="cart" aria-label="查看购物车" title="购物车">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2 11h12l2-8H6M9 19h.02M18 19h.02" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span id="cartBadge" class="cart-badge" hidden>0</span>
+        </button>
+      </div>
+    </div>
+    <div id="menuPanel" class="menu-panel" hidden>
+      <button data-nav="product">商品ページ <span>Product</span></button>
+      <button data-nav="cart">ショッピングカート <span>Cart</span></button>
+      <button data-nav="history">注文履歴 <span>History</span></button>
+      <button data-nav="results">抽選結果 <span>Results</span></button>
+    </div>
+  </header>
+  <main id="app" class="app" aria-live="polite"></main>
+  <footer class="footer">非公式の模擬応募サイトです。実際の注文・支払い・応募・当選とは一切関係ありません。<br>FNC Entertainment、P1Harmony、WHOZ+N の公式サービスではありません。</footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

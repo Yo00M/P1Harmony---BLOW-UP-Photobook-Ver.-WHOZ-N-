@@ -1,2 +1,31 @@
-# P1Harmony---BLOW-UP-Photobook-Ver.-WHOZ-N-
-P1Harmony - BLOW UP (Photobook Ver.) オンライン特典会WHOZ+N（模拟器）
+# P1Harmony — BLOW UP 日本线上特典会 · 非官方模拟网站
+
+本项目仅是粉丝制作的离线演示工具，不是 WHOZ+N、FNC 或 P1Harmony 官方网站。**不会真实付款、购买专辑、报名或产生当选资格。**
+
+## 页面和交互
+
+1. **商品页**：按照用户提供的 WHOZ+N 手机截图制作。无倒计时。点 `1部` / `2部` 打开浅红框，在下拉列表选择 KEEHO / THEO / JIUNG / INTAK / SOUL / JONGSEOB；按 `＋` `−` 调整张数；可点 `＋ メンバー追加` 增加其他成员。一个名额对应一张 3900 日元专辑、一个成员和一个部数。同一成员同一部数通过数量累加。
+2. **购物车**：按照提供的购物车截图展示本活动的专辑图片、选项、数量、单价、合计。选中商品才参与本次结算。**配送费固定每笔订单 990 日元**。
+3. **结算页**：展示模拟支付方式和结果模式（随机、全部当选、全部落选）；没有真实支付输入。
+4. **结果页**：每张专辑生成一条当选/落选卡片，成员颜色和用户截图一致（KEEHO 紫、THEO 红、JIUNG 青、INTAK 青绿、SOUL 蓝、JONGSEOB 黄绿）。支持点击顶部「总应募数 / 当选 / 落选」一键查看全部/全部当选/全部落选，也支持成员、场次、订单筛选。
+5. **订单历史 / 追加下单**：新订单不会覆盖旧订单，浏览器 localStorage 保存模拟订单。每笔订单另加 ¥990 配送费。
+
+**随机模式中 15% 只为体验界面提供的演示概率，不是官方真实中选率，也无法用于估计真实结果。**
+
+## 本地打开
+
+下载压缩包并解压，双击根目录的 `index.html`，即可在现代浏览器中使用。也可以用 VS Code Live Server 本地预览。
+
+## 发布到 GitHub Pages
+
+1. GitHub → New repository，仓库名例如 `p1harmony-simulator`，设为 Public。
+2. 把本目录下的 `index.html`、`styles.css`、`app.js`、`assets` 文件夹上传至仓库**根目录**（不能把整个文件夹嵌套多一层）。
+3. 打开仓库 Settings → Pages → Build and deployment → Source: **Deploy from a branch** → Branch: `main`、`/(root)` → Save。
+4. 发布完成后访问 `https://你的用户名.github.io/p1harmony-simulator/`。
+5. 修改代码后重新上传覆盖文件并提交，GitHub Pages 会重新发布。
+
+## 数据与安全
+
+- 不使用服务端、数据库、外部 API，也不发送任何支付或个人信息。
+- 订单保存在浏览器本地，跨设备不互通；清除站点数据后会丢失。
+- 本项目的 LOGO 是演示风格文字，不代表官方授权。
